@@ -1,0 +1,5 @@
+{
+  "editor.fontFamily": "'JetBrains Mono-Bold','Source Code Pro',consolas,'Courier New',monospace",
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.explorerKind": "external"
+}

@@ -1,0 +1,27 @@
+package main
+
+import "fmt"
+
+func main() {
+	//定义一个数组
+	var myArray1 [10]int
+
+	//第二种方式定义数组
+	myArray2 := [10]int{1, 2, 3, 4}
+	myArray3 := [4]int{11, 22, 33, 44}
+
+	//第一种 for 循环
+	for i := 0; i < len(myArray1); i++ {
+		fmt.Println(myArray1[i])
+	}
+
+	//第二种for循环
+	for index, value := range myArray2 {
+		fmt.Println("index = ", index, ", value = ", value)
+	}
+
+	//查看数组的类型
+	fmt.Printf("myArray1 type is %T\n", myArray1)
+	fmt.Printf("myArray2 type is %T\n", myArray2)
+	fmt.Printf("myArray3 type is %T\n", myArray3)
+}

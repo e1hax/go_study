@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	//defer关键字，在程序结束前执行
+	//defer 加载是以压栈的方式，所以打印就是以出栈的规则，后进先出
+	defer fmt.Println("hello defer....")
+	defer fmt.Println("hello defer2 ....")
+
+	fmt.Println("hello ...")
+	fmt.Println("world ...")
+}
