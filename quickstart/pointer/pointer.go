@@ -14,9 +14,11 @@ func main() {
 	var a int = 100
 	var b int = 200
 
+	var p *int = &a
+
 	//将a,b的地址传入swap函数
 	swap(&a, &b)
-
+	fmt.Println(p)
 	fmt.Println("a = ", a, "\nb = ", b)
 
 }
